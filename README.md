@@ -58,4 +58,20 @@ $ git pull origin master
 $ git merge v.02
     Nos ubicamos en la rama "main", y hacemos el merch de la rama v0.2 en la rama main
 
-git commit -am "Se agrega Hola en el fichero 1.txt"
+$ git commit -am "Se agrega Hola en el fichero 1.txt"
+$ git checkout v0.2
+$ git commit -am "Se agrega Adios en el fichero 1.txt"
+$ git checkout main
+$ git merge v0.2
+$ git commit -am "Se aceptan ambos cambios, conflicto solucionado"
+    [main 08a5e94] Se aceptan ambos cambios, conflicto solucionado
+
+$ git branch --merged
+* main
+  v0.2
+    Nos muestra 2 ramas con merge
+
+$ git branch --no-merged
+    No nos muestra ramas sin merge (todas estan involucradas)
+
+$ git tag -a v0.2 -m "Segundo avance de ejercicio practico" 08a5e94
