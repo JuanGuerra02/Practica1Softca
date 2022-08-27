@@ -75,3 +75,24 @@ $ git branch --no-merged
     No nos muestra ramas sin merge (todas estan involucradas)
 
 $ git tag -a v0.2 -m "Segundo avance de ejercicio practico" 08a5e94
+
+$ git branch -d v0.2
+Deleted branch v0.2 (was f991504).
+
+
+Listar los distintos commits con sus ramas y sus tags
+$ alias arbol="git log --all --graph --decorate --oneline"
+$ arbol
+* 1a21984 (HEAD -> main, tag: v0.2) Se actualiza la informacion de Readme.md
+*   08a5e94 Se aceptan ambos cambios, conflicto solucionado
+|\
+| * f991504 Se agrega Adios en el fichero 1.txt
+* | 74074d1 Se agrega Hola en el fichero 1.txt
+|/
+* a2ae622 (origin/v0.2) Actualizando informacion de README.md
+* a74fa57 Archivo 2.txt creado en rama v0.2
+* 49d88f7 (tag: v0.1, origin/main, origin/HEAD) actualziando informacion en README.MD
+* a4342cb Añadiendo ficheros al repositorio local
+* c92c91c correccion en texto
+* e49b9f7 commit inicial
+* 3f0a3e4 Initial commit
