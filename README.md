@@ -48,10 +48,14 @@ $ git push origin --tags
 
 $ git branch v0.2
 $ git checkout v0.2
-    Creamos la rama v0.2 y nos ubicamos en la rama v0.2
+    Creamos la rama "v0.2" y nos ubicamos en la rama "v0.2"
 
 $ git push origin v0.2
     Subimos rama al repositorio remoto
 
+$ git checkout main
+$ git pull origin master
+$ git merge v.02
+    Nos ubicamos en la rama "main", y hacemos el merch de la rama v0.2 en la rama main
 
-
+git commit -am "Se agrega Hola en el fichero 1.txt"
