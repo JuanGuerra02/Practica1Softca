@@ -39,3 +39,19 @@ $ touch 1.txt
 $ git add .
 $ git commit -m "añadiendo ficheros al repositorio local"
 
+$ git tag -a v0.1 -m "Primer avance de ejercicio practico" 49d88f7
+    Se creea el tag v0.1
+
+$ git pull origin main
+$ git push origin --tags
+    Se sube el tag al repositorio remoto
+
+$ git branch v0.2
+$ git checkout v0.2
+    Creamos la rama v0.2 y nos ubicamos en la rama v0.2
+
+$ git push origin v0.2
+    Subimos rama al repositorio remoto
+
+
+
